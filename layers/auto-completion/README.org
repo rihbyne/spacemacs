@@ -32,11 +32,9 @@ Snippets are supported via [[https://github.com/capitaomorte/yasnippet][yasnippe
 This layer also configures =hippie-expand=.
 
 * Install
-To use this configuration layer add it to your =~/.spacemacs=
-
-#+BEGIN_SRC emacs-lisp
-  (setq-default dotspacemacs-configuration-layers '(auto-completion))
-#+END_SRC
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =auto-completion= to the existing =dotspacemacs-configuration-layers= list in this
+file.
 
 * Configuration
 ** Key bindings
@@ -59,8 +57,9 @@ layer variables:
    as been entered quickly enough. If its value is =nil= then the feature is
    disabled.
 
-4. =auto-completion-private-snippets-directory= is a path to your private
-   snippets directory. If its value is =nil= then the spacemacs default is used.
+4. =auto-completion-private-snippets-directory= is a path or list of paths to
+   your private snippets directory. If its value is =nil= then the spacemacs
+   default (=~/.emacs.d/private/snippets=) is used.
 
 The default configuration of the layer is:
 
